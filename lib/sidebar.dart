@@ -1,4 +1,4 @@
-import 'package:ghekko_demo_2_flutter_app/sidebar/over-ons.dart';
+import 'package:ghekko_demo_2_flutter_app/sidebar/getwidget-card.dart';
 import 'package:ghekko_demo_2_flutter_app/sidebar/faq.dart';
 import 'main.dart';
 import 'package:flutter/cupertino.dart';
@@ -66,7 +66,7 @@ class SideBar extends StatelessWidget {
         ),
             ListTile(
               title: const Text(
-                'Over Ons',
+                'GetWidget Card',
                 style: TextStyle(
                   fontFamily: 'Arial Rounded MT Bold',
                   fontSize: 13,
@@ -76,16 +76,16 @@ class SideBar extends StatelessWidget {
               ),
               leading: IconButton(
                 iconSize: 22,
-                icon: const Icon(Icons.people,
+                icon: const Icon(Icons.add_card_outlined,
                   color: Colors.black,
                 ),
                 onPressed: () {
-                  Navigator.of(context).push(CupertinoPageRoute(builder: (context) => const OverOns()));
+                  Navigator.of(context).push(CupertinoPageRoute(builder: (context) => const GetCard()));
                 },
               ),
               onTap: ()
               {
-                Navigator.of(context).push(CupertinoPageRoute(builder: (context) => const OverOns()));
+                Navigator.of(context).push(CupertinoPageRoute(builder: (context) => const GetCard()));
               },
             ),
         ListTile(
